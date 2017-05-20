@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "早睡",
+  "version": "1.0",
+  "description": "检测百度是否在线",
+  "icons": {
+    "16": "images/online.png",
+    "48": "images/online.png",
+    "128": "images/online.png"
+  },
+  "browser_action": {
+//    "default_icon": {
+//      "19": "images/online.png",
+//      "38": "images/online.png"
+//    }
+  },
+  "background": {
+    "scripts": [
+      "js/status.js"
+    ]
+  },
+  "permissions": [
+    "https://www.baidu.com/"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "永远点不到美团搜索按钮",
+  "version": "1.0.1",
+  "description": "让你永远点不到美团搜索按钮",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.meituan.com/*"],
+      "js": ["js/cannot_touch.js"]
+    }
+  ]
+
+}
