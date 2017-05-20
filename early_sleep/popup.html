@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>早睡面板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width:  325px;
+            height: 100px;
+        }
+
+        #sleep_set {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #sleep_set a {
+            color: red;
+            font-size: 40px;
+        }
+
+        #time_left {
+            text-align: center;
+        }
+
+        #time_left a {
+            color: blue;
+
+        }
+        
+        #sleep_notice {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #sleep_notice a {
+            color:red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<!--用于统计睡眠时间-->
+<div id="sleep_set"><a></a></div>
+<!--<div id="time_left"><a></a></div>-->
+<div id="sleep_notice"><a>熬夜伤肝</a></div>
+<script src="js/sleep_time.js"></script>
+</body>
+</html>

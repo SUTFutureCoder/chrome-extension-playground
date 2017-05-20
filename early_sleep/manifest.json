@@ -1,25 +1,28 @@
 {
   "manifest_version": 2,
-  "name": "早睡",
+  "name": "早睡提醒",
   "version": "1.0",
-  "description": "检测百度是否在线",
+  "description": "早睡提醒",
   "icons": {
-    "16": "images/online.png",
-    "48": "images/online.png",
-    "128": "images/online.png"
+    "16": "images/Hotel_Motel_Sleeping_Accomodation_clip_art_medium.png",
+    "48": "images/Hotel_Motel_Sleeping_Accomodation_clip_art_medium.png",
+    "128": "images/Hotel_Motel_Sleeping_Accomodation_clip_art_medium.png"
   },
   "browser_action": {
-//    "default_icon": {
-//      "19": "images/online.png",
-//      "38": "images/online.png"
-//    }
+    "default_icon": {
+      "19": "images/Hotel_Motel_Sleeping_Accomodation_clip_art_medium.png",
+      "38": "images/Hotel_Motel_Sleeping_Accomodation_clip_art_medium.png"
+    },
+    "default_title": "早睡提醒",
+    "default_popup": "popup.html"
   },
+  "options_page": "options.html",
   "background": {
     "scripts": [
-      "js/status.js"
+      "js/sleep_time_alert.js"
     ]
-  },
-  "permissions": [
-    "https://www.baidu.com/"
-  ]
+  }
+//  "permissions": [
+//    "https://www.baidu.com/"
+//  ]
 }

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>早睡提醒配置</title>
+</head>
+<body>
+    <div id="set_time">
+        <div id="set_time_input">
+            <a>设定时间(24小时)</a>
+            <input type="number" id="sleep_time_hour"/><a>时</a>
+            <input type="number" id="sleep_time_minute"/><a>分</a>
+        </div>
+        <br/>
+        <div id="set_alert_input">
+            <a>连续提醒时间</a>
+            <input type="number" id="sleep_alert_crontab"/><a>小时</a>
+        </div>
+        <br/>
+        <input type="button" id="save" value="保存"/>
+    </div>
+    <script src="js/options.js"></script>
+</body>
+</html>
