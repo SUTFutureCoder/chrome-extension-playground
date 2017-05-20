@@ -32,7 +32,8 @@ setInterval(function (){
   var virtualTimeStampYesterday = virtualTimeStampToday - 24 * 60 * 60 * 1000;
 
   //开始判断当前时间和两个时间的时间差
-  if (currentTimeStamp - virtualTimeStampToday < sleepAlertHour * 60 * 60 * 1000 || currentTimeStamp - virtualTimeStampYesterday < sleepAlertHour * 60 * 60 * 1000){
+  if (((currentTimeStamp - virtualTimeStampToday) > 0 && (currentTimeStamp - virtualTimeStampToday) < sleepAlertHour * 60 * 60 * 1000)
+      || (( currentTimeStamp - virtualTimeStampYesterday) > 0 && (currentTimeStamp - virtualTimeStampYesterday < sleepAlertHour * 60 * 60 * 1000))){
     alert("快去睡觉！");
   }
 }, 1000);
